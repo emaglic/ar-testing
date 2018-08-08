@@ -1,0 +1,90 @@
+{
+	"videos": [
+		{
+			"title" : "The Abyss",
+			"type" : "movie",
+			"info" : {
+				"year" : "1989",
+				"rating" : "PG-13",
+				"duration" : "145", 
+				"genre" : ["adventure", "drama", "sci-fi"],
+				"synopsis" : "Ed Harris and Mary Elizabeth Mastrantonio are formerly married petroleum engineers who still have some issues to work out. They are drafted to assist a gung-ho Navy SEAL (Michael Biehn) with a top-secret recovery operation: a nuclear sub has been ambushed and sunk, under mysterious circumstances, in some of the deepest waters on Earth."
+			},
+			"files" : {
+				"root" : "./videos/A/Abyss",
+				"poster" : "Abyss.jpg",
+				"video" : "Abyss.mp4"
+			}
+		},
+		{
+			"title" : "Ghostbusters",
+			"type" : "movie",
+			"info" : {
+				"year" : "1984",
+				"rating" : "PG",
+				"duration" : "105", 
+				"genre" : ["action", "comedy", "fantasy"],
+				"synopsis" : "After the members of a team of scientists (Harold Ramis, Dan Aykroyd, Bill Murray) lose their cushy positions at a university in New York City, they decide to become \"ghostbusters\" to wage a high-tech battle with the supernatural for money. They stumble upon a gateway to another dimension, a doorway that will release evil upon the city. The Ghostbusters must now save New York from complete destruction."
+			},
+			"files" : {
+				"root" : "./videos/G/Ghostbusters",
+				"poster" : "Ghostbusters.jpg",
+				"video" : "Ghostbusters.mp4"
+			}
+		},
+		{
+			"title" : "Once Upon Atari",
+			"type" : "show",
+			"info" : {
+				"year" : "2003",
+				"rating" : "N/A",
+				"duration" : "30", 
+				"genre" : ["documentary"],
+				"synopsis" : "Story of Atari after its fall from the mouths of the people who created and escalate Atari to the top of the computer world, the video game designer and programmers."
+			},
+			"files" : {
+				"root" : "./videos/O/OnceUponAtari",
+				"poster" : "OnceUponAtari.jpg",
+				"video" : [
+					{
+						"season" : "1",
+						"episodes" : [
+							{
+								"title" : "Episode 1",
+								"video" : "OnceUponAtari_E01.mp4"
+							},
+							{
+								"title" : "Episode 2",
+								"video" : "OnceUponAtari_E02.mp4"
+							},
+							{
+								"title" : "Episode 3",
+								"video" : "OnceUponAtari_E03.mp4"
+							},
+							{
+								"title" : "Episode 4",
+								"video" : "OnceUponAtari_E04.mp4"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"title" : "The Pirates of Silicon Valley",
+			"type" : "movie",
+			"info" : {
+				"year" : "1999",
+				"rating" : "N/A",
+				"duration" : "95", 
+				"genre" : ["biography", "drama", "history"],
+				"synopsis" : "A biographical look at the men who made the world of technology what it is today, and what it took to build up the global corporate empires of Apple Computer Corporation and Microsoft Inc."
+			},
+			"files" : {
+				"root" : "./videos/P/PiratesOfSiliconValley",
+				"poster" : "PiratesOfSiliconValley.jpg",
+				"video" : "PiratesOfSiliconValley.mp4"
+			}
+		}
+	]
+}

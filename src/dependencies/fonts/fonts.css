@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'OutrunFuture';
+  src: url('./outrunfuture/outrunfuture.otf') format("opentype"), 
+       url('./outrunfuture/outrunfuture.woff')  format('woff');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'OutrunFuture';
+  src: url('./outrunfuture/outrunfuturebold.otf') format("opentype"), 
+       url('./outrunfuture/outrunfuturebold.woff')  format('woff');
+  font-style:normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'OutrunFuture';
+  src: url('./outrunfuture/outrunfuturebolditalic.otf') format("opentype"), 
+       url('./outrunfuture/outrunfuturebolditalic.woff')  format('woff');
+  font-style:italic;
+  font-weight: bold;
+}
+
