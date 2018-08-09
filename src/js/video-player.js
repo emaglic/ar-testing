@@ -10,10 +10,17 @@ const init = function() {
 	let front = false;
 
 	navigator.mediaDevices.getUserMedia({video: { facingMode: (front ? 'user' : 'environment') }, audio: false}).then(function (stream) {
-		video.src = window.URL.createObjectURL(stream)
-		let message = `<p>Camera Feed Loaded Successfully...</p>`
-		infoPanel.add(message)
+		try {
+			video.srcObject = stream;
+			infoPanel.add(`<p>Using (modern) MediaStream + video.srcObject Method</p>`)
+		} catch(error) {
+			video.src = window.URL.createObjectURL(stream)
+			infoPanel.add(`<p>Using (depreciated) video.src = window.URL.createObjectURL(stream) Method</p>`)
+		}
+		infoPanel.add(`<p>MediaStream (Camera Feed) Started Successfully</p>`)
 	}).catch(handleError)
+
+
 
 }
 

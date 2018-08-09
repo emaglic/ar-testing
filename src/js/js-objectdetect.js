@@ -1,3 +1,5 @@
+import {infoPanel} from './info-panel'
+
 const exp = module.exports;
 
 const tickOpts = {
@@ -20,8 +22,6 @@ const tick = function(opts) {
 		let video = document.querySelector('.camera-feed')
 	
 		if(video.paused) video.play();
-
-		console.log(video.offsetWidth)
 
 		if (video.readyState === video.HAVE_ENOUGH_DATA && video.offsetWidth > 0) {
 
@@ -62,6 +62,9 @@ const tick = function(opts) {
 }
 
 const init = function() {
+
+	infoPanel.add(`<p>Initializing Augmented Reality...</p>`)
+
 	let video = document.querySelector('.camera-feed')
 	
 	let arContainer = document.querySelector('.ar-container')

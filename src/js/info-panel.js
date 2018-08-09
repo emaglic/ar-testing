@@ -36,7 +36,6 @@ const toggle = function() {
 }
 
 const resize = function() {
-	console.log('hooray')
 	let infoPanel = document.querySelector('.info-panel')
 	let infoHeader = document.querySelector('.info-header')
 	let infoOpts = document.querySelector('.info-options')
