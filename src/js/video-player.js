@@ -3,6 +3,7 @@ import {infoPanel} from './info-panel'
 
 const init = function() {
 	let video = document.querySelector('.camera-feed')
+	video.classList.add('flipped')
 
 	let localMediaStream = null
 

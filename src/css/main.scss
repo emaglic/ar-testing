@@ -38,6 +38,8 @@ div.container {
 	}
 }
 
+// For the info-panel
+//================================================================
 div.info-panel {
 	z-index:100;
 	position: fixed;
@@ -94,6 +96,23 @@ div.info-panel {
 		}
 	}
 }
+//================================================================
+
+//For the ar-container
+//================================================================
+div.ar-container {
+	position:absolute;
+	width: auto;
+	height: auto;
+	top:0px;
+	left:0px;
+
+	img.arObj {
+		display:block;
+		position:absolute;
+	}
+}
+//================================================================
 
 button {
 	-moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
