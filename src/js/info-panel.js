@@ -18,6 +18,7 @@ const init = function() {
 	infoFlipVideo.onclick = function() {
 		let video = document.querySelector('.camera-feed')
 		video.classList.toggle('flipped')
+		add(`<p>Flip Video Toggled</p>`)
 	}
 }
 

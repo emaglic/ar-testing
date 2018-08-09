@@ -5,7 +5,8 @@ import {globalResize} from './global-resize'
 import {jsObjectDetect} from './js-objectdetect'
 
 window.customSettings = {
-	useAR: true
+	useAR: true,
+	arType: 'jsObjectDetect'
 }
 
 function init() {
@@ -13,10 +14,15 @@ function init() {
 	videoPlayer.init();
 	
 	if(window.customSettings.useAR) {
-		jsObjectDetect.init();
+		if(window.customSettings.arType === 'jsObjectDetect') {
+			jsObjectDetect.init();
+		}
 	}
 	globalResize();
-	window.requestAnimationFrame(tick)
+
+	if(window.customSettings.useAR) {
+		window.requestAnimationFrame(tick)
+	}
 }
 
 window.onresize = function() {
@@ -25,8 +31,8 @@ window.onresize = function() {
 
 function tick(evt) {
 
-	if(window.customSettings.useAR) {
-		jsObjectDetect.tick(jsObjectDetect.tickOpts);
+	if(window.customSettings.arType === 'jsObjectDetect') {
+		jsObjectDetect.tick(jsObjectDetect.objDetectOpts);
 	}
 
 	window.requestAnimationFrame(tick)
