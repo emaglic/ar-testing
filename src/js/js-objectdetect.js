@@ -14,7 +14,6 @@ const objDetectOpts = {
 		`./images/sunglasses_5.png`,
 		`./images/sunglasses_6.png`,
 		`./images/sunglasses_7.png`,
-		`./images/ironMan.png`,
 	],
 	currARObj: 0
 }
